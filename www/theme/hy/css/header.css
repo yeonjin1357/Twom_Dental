@@ -1,0 +1,100 @@
+/* ======================================================================================================================================================================== */
+/* ============================================================ header style start (yangyunji) =========================================================================== */
+/* ======================================================================================================================================================================== */
+
+/* ======================================================================================================================================================================== */
+/* ============================================================ header style start (yangyunji) =========================================================================== */
+/* ======================================================================================================================================================================== */
+
+header{position:fixed;width:100%;background:linear-gradient( to bottom, rgba(255,255,255,1), rgba(255,255,255,0.7));z-index:999;}
+#header_wrap #logo{text-align:center;padding:20px 0; max-width: 100%; margin: 0 auto; display: flex; justify-content:space-between; align-items:center;}
+#header_wrap #logo > a{flex:1;}
+/* 메뉴 */
+nav{border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+nav #nav_wrap{max-width: 1200px; width: 100%; margin: 0 auto;}
+nav #nav_wrap ul{overflow:hidden;text-align:center;}
+nav #nav_wrap ul li{float:left;width:16.6%;}
+
+nav #nav_wrap ul li a{display:inline-block;font-size: 17px;font-family: "nanumSQ";color:#252525;width:100%;text-align:center;padding:15px 0;letter-spacing:-1px;}
+nav #nav_wrap ul li:hover a{color:#423d3c;font-family: "nanumSQEB";transition:all 0.5s ease-out;}
+nav #nav_wrap ul li a.on{color:#423d3c;font-family: "nanumSQEB";}
+/* join, login */
+#gnb {width: 100%; border-bottom: 1px solid #eee;}
+#gnb .util_member {display: flex; justify-content: flex-end;}
+#gnb .util_member li:last-child {margin-right: 50px;}
+
+#gnb h3 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#gnb a {font-size: 14px; display:inline-block; padding:0 10px; color:#555; line-height:35px;}
+#gnb a:focus, #gnb a:hover {color:#c0a230;}
+#bo_v_info strong a{color: #555;}
+/*모바일메뉴*/
+#m_menu{display:none;  }
+#logo_m {display:none;}
+#m_phone{display: none;}
+
+/* ================== sub-menu ===================== */
+/* tab-menu */
+.tab-menu-wrap {position:relative; height: 50px;}
+.tab-menu {position: absolute; top: 0; width: 100%; z-index: 9999;}
+.tab-menu * {font-size: 15px;}
+.tab-menu::before {content: ''; background-color: #f3f7fb; display: block; width: 100%; position: absolute; height: 50px; z-index: -4; left: 0; top: 0; border-bottom: 1px solid #dcdcdc;}
+.tab-menu .home-btn {display:inline-block; padding: 15px 15px; text-align:left; border-left: 1px solid #dcdcdc; border-right: 1px solid #dcdcdc; height: 50px;} 
+.tab-menu .home-btn img {width: 50px;height: auto;}
+.tab-menu .inner div p.btn:hover, .tab-menu .home-btn.hover {background-color: #f3f7fb !important;}
+.tab-menu .inner {display: flex;}
+.tab-menu .inner div {width: 100%;}
+.tab-menu .inner div ul {cursor:pointer; position:relative; width: 100%;}
+.tab-menu .inner div p.btn {min-height: 50px; position: relative !important; color:#333 !important; padding: 14px 10px !important; border-right: 1px solid #dcdcdc !important; cursor: pointer;}
+.tab-menu .inner div p.btn::after {transition: all ease 0.5s; transform: translate(0, -50%); content: ''; position: absolute; top:50%; right: 2%; width: 22px; height: 22px; background: url(../img/sub_navi_off.png) 0 0 no-repeat;}
+.tab-menu .inner div:hover p.btn::after {background: url(../img/sub_navi_on.png) 0 0 no-repeat; transition: all ease 0.5s;}
+.tab-menu .inner div ul {display: none; border: 1px solid #dcdcdc;}
+.tab-menu .inner div ul li a {display: block; color: #000; padding: 7px 10px; background-color: #f3f7fb;}
+.tab-menu .inner div ul li a:hover {background-color: #6aa6e2; color: #fff;}
+
+
+/* ============================== Mobile size : 1200px ============================== */
+
+@media screen and (max-width:1200px){
+
+	#logo {display:none !important;}
+	#logo_m{display:block;width:100%;height:auto;text-align:center;padding:10px 0;}
+	#logo_m img{max-width: 200px; padding: 10px 0;}
+	nav #nav_wrap ul li{float:left;width:33.3%;border:1px solid #CCC;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}	
+	nav #nav_wrap ul li a{font-size: 14px;}
+	/*메뉴버튼*/
+	
+	#m_menu {display:block; position:absolute; cursor:pointer; display:block !important; top:27px; left:20px;}
+	#m_menu span {display:none;}
+    #nav_wrap {position:absolute; top:80px; background:rgba(255,255,255,0.9);display:none;}
+	#gnb{display: none;}
+	#m_phone {display: block;position: absolute;top: 21px;right: 10px; }
+	#m_phone img{width: 70%;}
+
+
+	
+
+
+/* ============================== Mobile size : 1024px ============================== */
+@media screen and (max-width:1024px){
+	.tab-menu .inner {padding: 0;}
+}
+
+/* ============================== Mobile size : 769px ============================== */
+@media screen and (max-width:769px){
+	#quick_menu {display: none;}
+	.tab-menu * {font-size: 12px;}
+	.tab-menu .inner div p.btn:after {width: 18px; height: 18px; background-size: cover;}
+	.tab-menu .inner div:hover p.btn:after {width: 18px; height: 18px; background-size: cover;}
+}
+@media screen and (max-width:425px){
+	#m_logo img{width: 160px;}
+	.spinner-master{margin-top: -40px;}
+	#phone-call{top: 10px;}
+	#m_phone{top: 17px;}
+	#m_phone img{width: 80%;}
+	#logo_m img{width: 160px;}
+	#m_menu{top: 24px;}
+	#nav_wrap{top: 72px;}
+	nav #nav_wrap ul li a{font-size: 12px;}
+}
+

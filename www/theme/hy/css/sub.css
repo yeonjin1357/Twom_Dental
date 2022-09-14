@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+#wrapper {margin-top: 123px;}
+section:last-of-type {padding-bottom: 7%;}
+
+/* ================= background-image ================== */
+
+	/* common */
+	.banner-bg {padding: 11% 0;}
+	.banner-bg h2 {color: #fff; text-align: center;}
+	.banner-bg p {color: #fff; text-align: center; font-size: 13px; letter-spacing: 2px;}
+
+	/* about */
+	.about-bg.banner-bg {background: url(../img/sub/about_bg.jpg) center/cover no-repeat;}
+	.info-dentist-bg.banner-bg {background: url(../img/sub/info_dentist_bg.jpg) center/cover no-repeat;}
+	.info-equipment-bg.banner-bg {background: url(../img/sub/info_equipment_bg.jpg) center/cover no-repeat;}
+	.info-interior-bg.banner-bg {background: url(../img/sub/info_interior_bg.jpg) center/cover no-repeat;}
+	.info-time-bg.banner-bg {background: url(../img/sub/info_time_bg.jpg) center/cover no-repeat;}
+	.info-map-bg.banner-bg {background: url(../img/sub/info_map_bg.jpg) center/cover no-repeat;}
+
+	/* sub2, sub3 */
+	.implant-bg.banner-bg {background: url(../img/sub/implant_bg.jpg) center/cover no-repeat;}
+	.ortho-bg.banner-bg {background: url(../img/sub/ortho_bg.jpg) center/cover no-repeat;}
+
+	/* sub4 */
+	.wisdom-bg.banner-bg {background: url(../img/sub/wisdom_bg.jpg) center/cover no-repeat;}
+	.jaw-point-bg.banner-bg {background: url(../img/sub/jaw_point_bg.jpg) center/cover no-repeat;}
+	.caries-bg.banner-bg {background: url(../img/sub/caries_bg.jpg) center/cover no-repeat;}
+	.prosthetic-bg.banner-bg {background: url(../img/sub/prosthetic_bg.jpg) center/cover no-repeat;}
+	.denture-bg.banner-bg {background: url(../img/sub/denture_bg.jpg) center/cover no-repeat;}
+	.gum-therapy-bg.banner-bg {background: url(../img/sub/gum_therapy_bg.jpg) center/cover no-repeat;}
+	.root-canal-bg.banner-bg {background: url(../img/sub/root_canal_bg.jpg) center/cover no-repeat;}
+	.aesthetic-bg.banner-bg {background: url(../img/sub/aesthetic_bg.jpg) center/cover no-repeat;}
+
+	/* member(login, join) */
+	.member-bg.banner-bg {background: url(../img/sub/login_bg.jpg) center/cover no-repeat;}
+
+
+/* ======================================================================================================================== */
+/* =================================================== sub start ========================================================== */
+/* ======================================================================================================================== */
+	
+/* ============================================== common ================================================================== */
+	/* 숫자 스타일 */
+	.num::before {content: attr(data-num); display: block; width: 50px; height: 50px; background-color: #0597f2; color: #fff; font-size: 1.8em; font-weight: 500; text-align: center;}
+	
+	/* 미들 타이틀 (작은 타이틀) */
+	.middle-title {font-family: 'GmarketSansMedium'; font-weight: 500; text-align: center; margin-bottom: 3%;}
+	.middle-title p {font-family: 'Noto Sans KR'; font-weight: 300; white-space: pre-line; margin-top: 1%;}
+
+	/* 레이아웃 */
+	.col-2, .col-3, .col-4, .col-5 {display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
+	.col-2 li, .col-3 li, .col-4 li, .col-5 li {position: relative; margin-left: 2%; flex: 0 0 auto; width: 100%;}
+	.col-2 li {width: calc(50% - 2%);}
+	.col-4 li {width: calc(25% - 2%);}
+	.col-3 li, .col-5 li {width: calc(33.3% - 2%);}
+	.col-2 li:first-child, .col-2 li:nth-child(3), .col-2 li:nth-child(5), 
+	.col-3 li:first-child, .col-3 li:nth-child(4), .col-3 li:nth-child(7),
+	.col-4 li:first-child, .col-4 li:nth-child(5),
+	.col-5 li:first-child, .col-5 li:nth-child(4) {margin-left: 0;}
+	.col-2 li:nth-child(3), .col-2 li:nth-child(4),	.col-2 li:nth-child(5),
+	.col-3 li:nth-child(4), .col-3 li:nth-child(5), .col-3 li:nth-child(6), .col-3 li:nth-child(7), .col-3 li:nth-child(8), .col-3 li:nth-child(9),
+	.col-4 li:nth-child(5), .col-4 li:nth-child(6), .col-4 li:nth-child(7), .col-4 li:nth-child(8),
+	.col-5 li:nth-child(4), .col-5 li:nth-child(5), .col-5 li:nth-child(6), .col-5 li:nth-child(7), .col-5 li:nth-child(8), .col-5 li:nth-child(9) {margin-top: 3%;}
+	.col-2 li h5, .col-3 li h5, .col-4 li h5, .col-5 li h5 {margin: 3% 0 2% 0; font-weight: 500;}
+
+	/* 테이블 스타일 */
+	.table-wrap {text-align: center;}
+	.table-wrap h4 {background-color: #0597f2; color: #fff; display: inline-block; padding: 1% 1% 0 1%; font-family: 'GmarketSansMedium'; line-height: 1.2;}
+	.table-wrap table {width: 100%; white-space: pre-line; margin-top: 3%;}
+	.table-wrap table tr, .table-wrap table th, .table-wrap table td {font-size: 18px; padding: 1.5% 0; border: 1px solid #eeeeee; vertical-align: middle;}
+	.table-wrap table thead tr, .table-wrap table tbody tr th {background: #f5f5f5; font-weight: 500;}
+	.table-wrap img {margin-bottom: 3%;}
+	.photo-table .inner > p, .table-wrap .table-scroll p {text-align: center; margin-top: 3%; font-weight: 500;}
+	
+	/* 사진 들어간 테이블 */
+	.photo-table table {font-size: 18px; text-align: center; width: 100%; white-space: pre-line;}
+	.photo-table table tr, .photo-table table tr td {padding: 1.5% 0; border: 1px solid #eeeeee; vertical-align: middle;}
+	.photo-table table thead tr:first-of-type td:first-of-type, .photo-table table thead tr:first-of-type {border: none;}
+	.photo-table table thead tr:first-of-type td {padding: 0;}
+	.photo-table table thead tr:last-of-type, .photo-table table tbody tr td:first-of-type {background: #b6dff9; font-weight: 500;}
+	.photo-table table tbody tr:last-of-type {border: 0;}
+	.photo-table table td b {font-weight: 500;}
+	
+	/* 숫자 리스트 */
+	.num-list .num {margin-bottom: 1.5%;}
+	.num-list .num:last-child  {margin-bottom: 0;}
+	.num-list .num::before {width: 35px; height: 35px; font-size: 1.3em; display: inline-block; margin-right: 1%;}
+	.num-list .num:nth-child(2n-1)::before {background-color: #0c659d;}
+	
+	/* 동그란 사진, 사각형 사진 들어간 리스트 */
+	.line-list {text-align: center;}
+	.line-list li img {border: 2px solid #eee; width: 100%;}
+	.line-list .num::before {position: absolute; top: 0; left: 0;}
+	.circle-list {text-align: center;}
+	.circle-list li img {border: 2px solid #eee; border-radius: 50%;}
+	.line-list li h5, .circle-list li h5,.circle-list li p {white-space: pre-line;}
+	
+	/* 파란 선 들어간 네모 박스 */
+	.line-box li {border: 1px solid #eee; padding: 2% 2% 3% 3%; position: relative;}
+	.line-box li::after {content: ''; display: block; width: 10px; height: 100%; position: absolute; left: 0; top: 0; background-color: #0597f2;}
+	.line-box li h5 {margin-bottom: 2%; padding-bottom: 2%; border-bottom: 1px solid #eee; font-weight: 500;}
+	
+	/* 사진+텍스트 들어간 기본 스타일 */
+	.basic-box {display: flex; align-items: center; padding-top: 3%; margin-top: 3%; border-top: 1px solid #eee; justify-content: flex-start;}
+	.basic-box:first-of-type {border: none; margin-top: 0; padding-top: 0;}
+	.basic-box li:last-child {margin-left: 3%;}
+	.basic-box li h5 {margin: 3% 0; font-weight: 600; white-space: pre-line; line-height: 1.5;}
+	.basic-box li p {white-space: pre-line;}
+	
+	/* 원 안에 아이콘 들어간 리스트 */
+	.circle-icon {border-radius: 50%; border: 2px solid #f5f5f5; height: 100%; width: 100%;}
+	.circle-icon:nth-child(2n-1) {border: 2px solid #e5f4fd;}
+	.circle-icon * {margin: 0 auto; text-align: center;}
+	.circle-icon::after {content: ''; display: block; padding-bottom: 100%;}
+	.circle-icon div {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 50%; height: 50%; width: 100%; display: flex; flex-direction: column; justify-content: center;}
+	.circle-icon p {text-align: center; white-space: pre-line; line-height: 1.2; margin-top: 5%;}
+	
+	/* 원 안에 아이콘 없는 박스 */
+	.circle-box {border-radius: 50%; background-color: #f5f5f5;}
+	.circle-box:nth-child(2n-1) {background-color: #e5f4fd;}
+	.circle-box::after {content: ''; display: block; padding-bottom: 100%;}
+	.circle-box p {position: absolute; width: 100%; height: auto; bottom: 50%; transform: translate(0, 50%); text-align: center; white-space: pre-line;}
+	
+
+/*==================================================== about ============================================================== */
+
+	/* =========== info-dentist======== */
+	.tab-wrap {margin-bottom: 5%;}
+
+	/* 탭 메뉴 스타일 */
+	.tab-wrap input {display: none;}
+	.tab-wrap label {display: inline-block; padding: 15px 25px; text-align: center; border: 1px solid #ccc; color: #bbb; background-color: #fff; margin-left: -0.3%;}
+	.tab-wrap label:hover {color: #0597f2; cursor: pointer; transition: all ease 0.3s;}
+	.tab-wrap input:checked + label {color: #fff; background-color: #111; transition: all ease 0.3s;}
+	#tab-menu1:checked ~ #tab-content1, #tab-menu2:checked ~ #tab-content2, #tab-menu3:checked ~ #tab-content3, #tab-menu4:checked ~ #tab-content4 {display: block;}
+	
+	/* 탭 메뉴 내용 스타일 */
+	.tab-wrap .tab-content {padding: 3% 0 0 0; display: none;}
+	.tab-wrap .tab-content > ul {display: flex; width: 100%; background: url(../img/sub/info_dentist_icon.png) no-repeat; background-position: right bottom; background-size: auto;}
+	.tab-wrap .tab-content > ul > li {width: 45%;}
+	.tab-wrap .tab-content div {margin-bottom: 3%;}
+	.tab-wrap .tab-content .tab-name {border-bottom: 2px dotted #ddd;}
+	.tab-wrap .tab-content .tab-name span {font-size: 0.75em;}
+	.tab-wrap .tab-content .tab-name p {font-weight: 500; color: #555;}
+	.tab-wrap .tab-content .tab-name p:last-of-type {padding-bottom: 3%;}
+	.tab-wrap .tab-content .tab-name h4 {margin-bottom: 2%;}
+	.tab-wrap .tab-content ul ul {margin-top: 1.5%;}
+	.tab-wrap .tab-content ul ul:first-of-type {margin-top: 0;}
+	.tab-wrap .tab-content ul ul li {line-height: 1.8;}
+
+	/* =========== info-interior ======== */
+	.swiper-container {width: 100%; height: 550px; margin: 0 auto;}
+	.swiper-slide-container {height:100%; margin:auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
+	.gallery-top {height: 80%; width: 100%;}
+	.gallery-thumbs {height: 20%; box-sizing: border-box; padding: 10px 0;}
+	.gallery-thumbs .swiper-slide {width: 20%;	height: 100%; opacity: 0.4;}
+	.gallery-thumbs .swiper-slide-active {opacity: 1;}
+
+	/* =========== info-time ======== */
+	.info-time {position: relative;}
+	.info-time * {text-align: center;}
+	.info-time ul {display: flex; justify-content: center; width: 100%; margin: 0 auto 3%; padding: 0 10%;}
+	.info-time ul li {width: 100%;}
+	.info-time ul li img {width: 85%;}
+	.info-time ul li:last-child {margin-left: 5%;}
+	.info-time h6 {font-weight: 500; font-size: 20px; padding: 1.1% 0;}
+	.info-time h6:nth-of-type(2n) {padding: 2% 0;}
+	.info-time h6:nth-of-type(2n-1) {background-color: #f0f0f0;}
+	.info-time h6.night-time {background-color: #0597f2; color: #fff;}
+	.info-time h5 {font-weight: 500; margin-top: 3%;}
+	.info-time h5 img {max-width: 45px; padding-right: 0.5%;}
+
+	/* ========= info-map ========= */
+	.info-map #daumRoughmapContainer1629271760950 {width: 100% !important;}
+	.info-map ul {display: flex; margin-top: 3%; align-items: center;}
+	.info-map ul li {width: 100%; padding: 3% 0; background: url(../img/sub/info_map_bg02.png) no-repeat right center;}
+	.info-map ul li:first-child {padding-right: 3%; border-right: 2px solid #eee; margin-right: 3%; background-image: url(../img/sub/info_map_bg01.png);}
+	.info-map ul li h6 {font-weight: 500; line-height: 1; margin-bottom: 1%;}
+			
+/*==================================================== implant, ortho, basic ============================================================== */
+
+	/* ============= imp-navigation ============ */
+	.navi {text-align: center; margin-top: 3%;}
+	.navi * {white-space: pre-line;}
+	.navi p {font-weight: 400; margin-top: 1.5%;}
+	.navi h5 {font-weight: 500; position: relative; margin: 0 auto; border-bottom: 5px solid #e5f4fd; border-top: 5px solid #e5f4fd; padding: 2% 8%; display: inline-block;}
+	.navi h5::before, .navi h5::after {font-size: 80px; position: absolute; font-weight: 600; line-height: 1;}
+	.navi h5::before {content: '“'; left: 0; top: 5%;}
+	.navi h5::after {content: '”'; right: 0; top: 5%;}
+
+	/* ========= imp-insurance ========== */
+	.imp-insurance {text-align: center;}
+	.imp-insurance .inner > p {font-weight: 400; margin-top: 2%;}
+
+	.insurance-box {border: 2px solid #eee; padding: 5% 0; background: url(../img/sub/imp_insurance.jpg) no-repeat; background-size: cover; background-position: center bottom;}
+	.insurance-box .point {display: flex; align-items: flex-end; justify-content: center;}
+	.insurance-box .point li {margin-right: 2%;}
+	.insurance-box .point li h1 {font-size: 90px; font-family: 'GmarketSansMedium'; letter-spacing: -3px;}
+	.insurance-box .point li p {background-color: #f5f5f5; display: inline-block; padding: 0 5%; font-weight: 500;}
+	.insurance-box .point li:last-child {margin-right: 0;}
+	.insurance-box .point li:last-child h1 {font-family: 'GmarketSansBold';}
+	.insurance-box .point li:last-child p {background-color: #e5f4fd;}
+	
+	.insurance-box .info {background-color: #fff; margin: 0 auto; width: 100%; max-width: 550px; border: 2px solid #eee; padding: 1% 3% 1% 4%; text-align: left; margin-top: 3%; position: relative;}
+	.insurance-box .info::before {content: ''; display: block; position: absolute; left: 0; top: 0; width: 15px; height: 100%; background-color: #0597f2;}
+	.insurance-box .info li {display: flex; align-items: center; padding: 4% 0; border-bottom: 2px solid #eee;}
+	.insurance-box .info li:last-child {border-bottom: none;}
+	.insurance-box .info li h6 {font-weight: 500; margin-right: 5%;}
+	.insurance-box .info li p {white-space: pre-line;}
+
+	/* ========= ortho-age ========== */
+	.ortho-age {display: flex;}
+	.ortho-age li {margin-left: 2%;}
+	.ortho-age li:first-child {margin-left: 0;}
+
+	.age-box {display: flex; align-items: center; margin-top: 3%;}
+	.age-box ul {width: 100%; height: 100%;}
+	.age-box .line-box {max-width: 100%;}
+	.age-box .line-box li {border: none; padding: 3% 3% 3% 5%;}
+
+	/* ========= ortho-trans, ortho-clippy ========== */
+	.trans-clippy {display: flex; justify-content: center;}
+	.trans-clippy > li:first-child {margin-right: 5%;}
+	.trans-clippy > li > p {margin-top: 5%;}
+	.trans-clippy > li > img {border: 2px solid #eee;}
+	.trans-clippy ul {display: flex; position: relative; max-width: 426px;}
+	.trans-clippy ul::before {content: '+'; display: block; border: none; color: #0597f2; position: absolute; left: 50%; font-size: 40px; font-weight: 600; transform: translate(-50%, -50%); top: 50%;}
+	.trans-clippy ul li {border: 2px solid #0597f2; border-radius: 50%; width: 100%; position: relative; margin-left: 10%;}
+	.trans-clippy ul li:first-child {margin-left: 0;}
+	.trans-clippy ul li p {position: absolute; width: 100%; height: auto; top: 50%; transform: translate(0, -50%); text-align: center; white-space: pre-line;}
+	.trans-clippy ul li::after {content: ''; display: block; padding-bottom: 100%;}
+
+	/* ========= gum-therapy =========== */
+	.gum {display: block; margin: 0 auto 7%;}
+
+	/* =========== aesthetic =========== */
+	.aesthetic {max-width: 800px; text-align: center; margin: 0 auto;}
+	.ae-box li:last-child {width: 60%;}
+	
+	/* =========== wisdom =========== */
+	.wisdom {max-width: 600px; margin: 0 auto;}
+
+	/* ========= ortho-retainer =========== */
+	.retainer * {text-align: center;}
+	.retainer li {background-color: #f5f5f5; padding: 6% 0;}
+	.retainer li:nth-child(2n-1) {background-color: #e6f4fd;}
+	.retainer li h5:last-of-type::before {content: ''; width: 40px; background-color: #0597f2; height: 3px; display: block; margin: 3% auto 3%;}
+
+
+/* ============================================================== 1200px 이하 ============================================================== */
+@media screen and (max-width:1201px){
+	#wrapper {margin-top: 0;}
+}
+
+/* ============================================================== 1024px 이하 ============================================================== */
+@media screen and (max-width:1024px){
+
+	
+	/* =========== info-dentist ======== */
+	.tab-wrap {margin-bottom: 10%;}
+	.tab-wrap .tab-content > ul > li:first-child {margin-right: 3%;}
+	.tab-wrap .tab-content > ul {background-size: 30%;}
+	
+	/* ======= imp-navigation ======= */
+	.navi h5::before, .navi h5::after {font-size: 60px;}
+
+	/* ========= ortho-age ========== */
+	.age-box {display: block;}
+	.age-box .col-3 {display: flex; justify-content: flex-start;}
+
+	/* ========= ortho-clippy ========= */
+	.clippy li p {bottom: 28%;}
+	.clippy li img {top: 16%;}
+
+	/* ========= info-map ========= */
+	.info-map ul li {background-size: 20%;}
+
+}
+
+/* ============================================================== 769px 이하 ============================================================== */
+@media screen and (max-width:769px){
+
+	/* ============= common ============= */
+	
+	.num::before {margin: 2% auto 0; font-size: 1.5em; width: 40px; height: 40px;}
+	.num-list .num::before {margin: 0 1% 0 0;}
+
+	.col-3 {display: block;}
+	.col-3 li, .col-3 li:first-child, .col-3 li:nth-child(4), .col-3 li:nth-child(7) {max-width: 425px; margin: 0 auto 6%; width: 100%;}
+	.col-4 li {width: calc(50% - 2%);}
+	.col-4 li:nth-child(3), .col-4 li:nth-child(7) {margin-left: 0;}
+	.col-3 li:nth-child(4), .col-3 li:nth-child(5), .col-3 li:nth-child(6), .col-3 li:nth-child(7), .col-3 li:nth-child(8), .col-3 li:nth-child(9),
+	.col-4 li:nth-child(3), .col-4 li:nth-child(4), .col-4 li:nth-child(5), .col-4 li:nth-child(6), .col-4 li:nth-child(7), .col-4 li:nth-child(8) {margin-top: 3%;} 
+	
+	/* 테이블 스타일 */
+	.table-wrap .table-scroll {overflow-x: scroll; overflow-y: hidden; max-width: 100%;}
+	.table-wrap table {min-width: 700px; font-size: 15px;}
+	.table-wrap img {max-width: 80%;}
+	
+	/* 사진 들어간 테이블 */
+	.photo-table table {font-size: 15px; letter-spacing: -2px;}
+	.photo-table p {white-space: pre-line;}
+	
+	/* 사진+텍스트 들어간 기본 스타일 */
+	.basic-box {display: block; border: none; text-align: center;}
+	.basic-box li:last-child {margin-left: 0;}
+	.basic-box li h5 {margin: 1% 0;}
+	.basic-box li img {border-radius: 20px;}
+	.basic-box li img, .circle-list li img {width: 60%;}
+
+
+	.line-list li img {width: 100%;}
+	.line-list .num::before {margin: 0;}
+	
+	/* 파란 선 들어간 네모 박스 */
+	.line-box li::after {width: 8px;}
+
+	/* 원 안에 아이콘 들어간 리스트 */
+	.circle-icon {max-width: 250px;}
+	.circle-icon img {max-width: 50%;}
+
+	.circle-wrap {display: flex;}
+	.circle-wrap li, .circle-wrap li:first-child {width: calc(33.3% - 2%);}
+	.circle-wrap li img, .circle-wrap li:first-child img {max-width: 40%;}
+
+	.circle-list.col-4 li img {width: 80%;}
+
+	
+	/* =========== info-dentist ======== */
+	.tab-menu-wrap {width: 100%;}
+	.tab-menu-wrap input {max-width: 20%;}
+	.tab-wrap label {display: block; font-size: 15px; padding: 10px 0;}
+	.tab-wrap .tab-content > ul {display: block; background: none;}
+	.tab-wrap .tab-content > ul > li:first-child {margin-bottom: 3%; margin-right: 0;}
+	.tab-wrap .tab-content > ul > li {text-align: center;}
+	.tab-wrap .tab-content div {margin-bottom: 2%;}
+	.tab-wrap .tab-content .tab-name {justify-content: center; padding-bottom: 2%; max-width: 50%; margin: 0 auto 2%;}
+	.tab-wrap .tab-content > ul > li {width: 100%;}
+	
+	/* =========== info-time ======== */
+	.info-time {background: #fff;}
+	.info-time ul {display: block;}
+	.info-time ul li img {width: 70%;}
+	.info-time ul li:last-child {margin-left: 0; margin-top: 5%;}
+	.info-time h6 {font-size: 18px;}
+
+	/* ========= info-map ========= */
+	.info-map ul {display: block; margin: 0 auto;}
+	.info-map ul li {background-size: 10%; background-position: left center; padding-left: 11%;}
+	.info-map ul li:first-child {border-bottom: 1px solid #ddd; border-right: none;}
+
+	/* ============= imp-navigation ============ */
+	.navi h5 {padding: 1% 0; display: block; width: 100%; max-width: 600px;}
+	.navi h5::before, .navi h5::after {font-size: 50px; height: 40px; position: relative; width: 100%; display: block; top: 0;}
+	.navi h5::after {margin-top: 1%;}
+
+	/* ============= imp-insurance ============= */
+	.insurance-box {padding: 4%;}
+	.insurance-box .point li h1 {font-size: 70px;}
+	.insurance-box .info::before {width: 10px;}
+
+	/* ========= trans-clippy ========== */
+	.trans-clippy {display: block; text-align: center;}
+	.trans-clippy > li:first-child {margin-right: 0;}
+	.trans-clippy > li > p {margin-top: 3%;}
+	.trans-clippy ul {margin: 3% auto 0;}
+
+	/* =========== aesthetic =========== */
+	.ae-box li:last-child {max-width: 425px; margin: 0 auto !important; text-align: left;}
+	.ae-box li:last-child h5 {text-align: center;}
+
+}
+
+/* ============================================================== 425px 이하 ============================================================== */
+@media screen and (max-width:426px){
+	
+	/* ============= common ============= */
+	.num::before {font-size: 1.2em; width: 30px; height: 30px; margin: 3% auto 0;}
+	.num-list .num {text-align: center;}
+	.num-list .num::before {font-size: 1.2em; width: 25px; height: 25px; margin: 0 auto; display: block;}
+
+	.col-2 {display: block;}
+	.col-2 li {width: 100%; margin-left: 0;}
+	.col-5 li {width: calc(50% - 2%); margin-left: 0;}
+	.col-5 li:nth-child(2), .col-5 li:nth-child(4), .col-5 li:nth-child(6), .col-5 li:nth-child(8) {margin-left: 2%;}
+	.col-2 li:nth-child(2), .col-5 li:nth-child(3), .col-5 li:nth-child(4), .col-5 li:nth-child(5) {margin-top: 3%;}
+	.col-2 li p, .col-5 li p {white-space: pre-line;}
+	.col-2 li p br, .col-5 li p br {display: none;}
+
+	.basic-box li img {border-radius: 10px; max-width: 70%;}
+
+	.line-box li::after {width: 5px;}
+	.line-box li h5 {margin: 0 0 2% 0;}
+	
+	.table-wrap table tr, .table-wrap table th, .table-wrap table td {font-size: 12px;}
+	.table-wrap table {min-width: 500px;}
+	.photo-table table {font-size: 12px;}
+
+	/* =========== info-time ======== */
+	.info-time h5 img {max-width: 35px;}
+	
+	/* ========= info-map ========= */
+	.info-map .wrap_map {height: 250px !important;}
+
+	/* =========== imp-navigation, imp-insurance =========== */
+	.navi h5::before, .navi h5::after {font-size: 35px; height: 25px;}
+
+	.insurance-box {padding: 4%; background: #fff; border: none;}
+	.insurance-box .point li h1 {font-size: 50px;}
+	.insurance-box .info::before {width: 5px;}
+	.insurance-box > p {white-space: pre-line;}
+	.insurance-box > p br {display: none;}
+
+	/* ========= ortho-retainer ========== */
+	.retainer li h5:last-of-type::before {width: 20px;}
+
+}
